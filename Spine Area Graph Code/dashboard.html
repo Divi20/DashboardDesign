@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dashboard
+        </title>
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+         
+        <link rel="stylesheet"  href="index.css">
+        
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 col-md-3 sidebar">
+                    <ul class="nav nav-sidebar">
+                        <li class="active"><a href="#">Overview</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <hr>
+                        <li><a href="#">Analytics</a></li>
+                        <hr>
+                        <li><a href="#">Export</a></li>
+                        <hr>
+                    </ul>
+                </div>
+                <div class="col-sm-8 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                    <h1 class="page-header">Dashboard</h1>
+
+<!---->
+<div class="container">
+                
+    <div class="row">
+       
+           
+                <div id="totalSpending" class="col-md-5 col-sm-12">
+                        <div class="card" style=" height: 300px;
+                        width: 300px;
+                        margin-left: 2px;">
+                            <div class="cardheader">
+                                <h6>Total Spend</h6>
+                            </div>
+                                <div class="cardbody">
+                                    <h1 style="padding:60px 40px 60px 60px">560.00$</h1>
+                                    <button id="setbudget" type="button" class="btn btn-dark">Set Budget</button>
+                        </div>
+
+                </div>    
+            </div>
+        
+        
+                    <div class="col-md-4 col-sm-12">
+                            <div id="chart" class="card">
+                                    <div class="cardbody">
+                                            <div id="chartContainer"></div>
+                    </div>
+
+               
+         </div>
+    
+    
+
+
+</div>
+</div>
+
+<div class="row">
+    <div id="chart" class="card">
+        <div class="cardbody">
+                <div id="chartContainer"></div>
+</div>
+</div>
+
+
+<!---->                    
+                </div>
+            </div>
+        </div>
+        <script src="canvasjs.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dashboard
+        </title>
+             <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+             <link rel="stylesheet"  href="index.css">    
+    </head>
+    <body>
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="sidebar">
+                            <ul class="nav nav-sidebar">
+                                <li class="active"><a href="#">Overview</a></li>
+                                <li><a href="#">Reports</a></li>
+                                <li><a href="#">Analytics</a></li>
+                                <li><a href="#">Export</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 main">
+                            <h1 class="page-header">Dashboard</h1>
+                        </div>
+                    </div>
+                </div>
+<!---->
+                    <div class="container">
+                         <div class="row">
+                             <div id="totalSpending" class="col-md-5 col-sm-12">
+                                 <div class="card" style=" height: 320px;
+                                 margin-left: 150px;
+                                     width: 300px;">
+                            <div class="cardheader">
+                                <h6>Total Spend</h6>
+                            </div>
+                                <div class="cardbody">
+                                    <h1 style="padding:60px 40px 60px 60px">560.00$</h1>
+                                    <button id="setbudget" type="button" class="btn btn-dark">Set Budget</button>
+                        </div>
+
+                </div>    
+            </div>
+        
+        
+                    <div class="col-md-4 col-sm-12">
+                            <div id="chart" class="card">
+                                    <div class="cardbody">
+                                            <div id="chartContainer"></div>
+                    </div>
+
+               
+         </div>
+    
+    
+
+
+</div>
+</div>
+
+<div class="row">
+        <div class="card text-center" style="margin-left:170px;width: 200%">
+                <div class="card-header">
+                  <ul id="topnav" class="nav nav-tabs card-header-tabs" style="padding-left: 250px;">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Merchants</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#ListofEpenses">Outgoings</a>
+                    </li>
+                   
+                  </ul>
+                </div>
+                <div class="card-body">
+                        <ul style="margin-top: 0px">
+                                <li title="Spending"> 
+                                    <div class="row">
+                                    <img class="img" src="img/logo.png"></img>
+                                    <p class="name">ashdhbdh</p>
+                                    <p class="date">sdjsjd</p>
+                                    <p class="amount">sdjsjd</p>
+                                    </div>  
+                                </li>
+                                <hr>
+                                <li title="Spending"> 
+                                        <div class="row">
+                                        <img class="img" src="img/logo.png"></img>
+                                        <p>ashdhbdh</p>
+                                        <p>sdjsjd</p>
+                                        </div>  
+                                    </li>
+                                    <hr>
+                                    <li title="Spending"> 
+                                            <div class="row">
+                                            <img src="img/logo.png"></img>
+                                            <p>ashdhbdh</p>
+                                            <p>sdjsjd</p>
+                                            </div>  
+                                        </li>
+                                        <hr>
+                                        <li title="Spending"> 
+                                                <div class="row">
+                                                <img src="img/logo.png"></img>
+                                                <p>ashdhbdh</p>
+                                                <p>sdjsjd</p>
+                                                </div>  
+                                            </li>
+                                            <hr>
+                                   
+                         </ul>
+                </div>
+              </div>
+              
+</div>
+
+
+<!---->                    
+                </div>
+            </div>
+        </div>
+        <div id="ListofEpenses">
+            
+        </div>
+        <script src="canvasjs.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
