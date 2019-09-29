@@ -4,37 +4,69 @@
         <title>
             Dashboard
         </title>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
              <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
              <link rel="stylesheet"  href="index.css">    
+             <script src="https://www.w3schools.com/lib/w3.js"></script>
     </head>
     <body>
-            <div class="container-fluid">
+           
+           
+            <div  class="container-fluid">
                     <div class="row">
+                            
                         <div class="sidebar">
+                                <a href="#" style="margin-left: 100px;"><img src="img/logo.png"></img></a>
                             <ul class="nav nav-sidebar">
-                                <li class="active"><a href="#">Overview</a></li>
-                                <li><a href="#">Reports</a></li>
-                                <li><a href="#">Analytics</a></li>
-                                <li><a href="#">Export</a></li>
+                                <div class="row">
+                                        <li class="active">
+                                                <a class="nav-link " href="#" style="color: black"><span class="fa fa-home" style="color: black"></span> Accounts</a></li>
+                                        </li>
+                                </div>
+                                <div class="row">
+                                    
+                                    <li class="active">
+                                            <a class="nav-link active" href="#insites" style="color: black"><span class="fa fa-home" style="color: black"></span> Insights</a></li>
+                                    </li>
+                                        </div>
+                                <div class="row">
+                                        <li class="active">
+                                                <a class="nav-link" href="#" style="color: black"><span class="fa fa-home" style="color: black"></span> Savings</a></li>
+                                        </li>
+                                        </div>
+                                 <div class="row">
+                                        <li class="active">
+                                                <a class="nav-link" href="#" style="color: black"><span class="fa fa-home" style="color: black"></span> Cards</a></li>
+                                        </li>
+                                 </div>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 <div class="row">
+                                        <li class="active">
+                                                <a class="nav-link" href="./index.html" style="color: black"><span class="fa fa-home" style="color: black"></span> Quick action</a></li>
+                                        </li>
+                                 </div>
+                                
                             </ul>
                         </div>
                         <div class="col-sm-12 main">
-                            <h1 class="page-header">Dashboard</h1>
-                        </div>
-                    </div>
-                </div>
+                    
 <!---->
-                    <div class="container">
+                    <div id ="insights" class="container">
+                            <h3 class="page-header" style="margin-left: 5%;">Insights</h3>
                          <div class="row">
                              <div id="totalSpending" class="col-md-5 col-sm-12">
-                                 <div class="card" style=" height: 320px;
-                                 margin-left: 150px;
-                                     width: 300px;">
+                                 <div class="card" style=" height: 370px;
+                                      margin-left: 10%;
+                                     width: 400px;">
                             <div class="cardheader">
                                 <h6>Total Spend</h6>
                             </div>
                                 <div class="cardbody">
-                                    <h1 style="padding:60px 40px 60px 60px">560.00$</h1>
+                                    <h1 id="totalSpend" style="padding:80px 60px 80px 90px"></h1>
                                     <button id="setbudget" type="button" class="btn btn-dark">Set Budget</button>
                         </div>
 
@@ -58,8 +90,8 @@
 </div>
 
 <div class="row">
-        <div class="card text-center" style="margin-left:170px;width: 200%">
-                <div class="card-header">
+        <div class="card" style="width: 100%;margin-left: 5%; margin-top:5px;">
+                <div class="card-header" style="background-color:white">
                   <ul id="topnav" class="nav nav-tabs card-header-tabs" style="padding-left: 250px;">
                     <li class="nav-item">
                       <a class="nav-link" href="#">Categories</a>
@@ -74,40 +106,22 @@
                   </ul>
                 </div>
                 <div class="card-body">
-                        <ul style="margin-top: 0px">
-                                <li title="Spending"> 
-                                    <div class="row">
-                                    <img class="img" src="img/logo.png"></img>
-                                    <p class="name">ashdhbdh</p>
-                                    <p class="date">sdjsjd</p>
-                                    <p class="amount">sdjsjd</p>
-                                    </div>  
-                                </li>
-                                <hr>
-                                <li title="Spending"> 
+                        <ul id="spenditure" style="margin-top: 0px;">
+                            <p style="margin-right: 80%; font-size:17px"><b>Subscriptions</b></p>
+                             
+
+                                <li id="listspend" style="list-style-type: none"> 
                                         <div class="row">
-                                        <img class="img" src="img/logo.png"></img>
-                                        <p>ashdhbdh</p>
-                                        <p>sdjsjd</p>
+                                        <img id="img"></img>
+                                        <p id="name" style="margin-left: 22%"><b></b></p>
+                                        <p id="date" style="margin-left: 22%"></p>
+                                        <p id="amount" style="margin-left: 22%"></p>
                                         </div>  
                                     </li>
-                                    <hr>
-                                    <li title="Spending"> 
-                                            <div class="row">
-                                            <img src="img/logo.png"></img>
-                                            <p>ashdhbdh</p>
-                                            <p>sdjsjd</p>
-                                            </div>  
-                                        </li>
-                                        <hr>
-                                        <li title="Spending"> 
-                                                <div class="row">
-                                                <img src="img/logo.png"></img>
-                                                <p>ashdhbdh</p>
-                                                <p>sdjsjd</p>
-                                                </div>  
-                                            </li>
-                                            <hr>
+
+                                   
+                                
+                              
                                    
                          </ul>
                 </div>
@@ -118,11 +132,20 @@
 
 <!---->                    
                 </div>
+
+                <div id="accounts" class="container" style="display:none;">
+                        <h2 class="text-center">This is accounts section</h2>
+                </div>
             </div>
         </div>
-        <div id="ListofEpenses">
-            
-        </div>
+
+    </div>
+</div>
+</div>
+</div>
+
+        
+             
         <script src="canvasjs.min.js"></script>
         <script type="text/javascript" src="index.js"></script>
     </body>
