@@ -56,13 +56,23 @@ var listContent =[
 
 
 
+for (var i = 0; i < listContent.length; i++) {
+document.getElementById("img").src = listContent[i].img;
+document.getElementById("name").innerHTML = listContent[i].name;
+document.getElementById("date").innerHTML = listContent[i].date;
+document.getElementById("amount").innerHTML = listContent[i].amount;
+
+
+}
+
+
 
 document.getElementById("totalSpend").innerHTML = "560.00$";
-var i;
-var listspend = document.getElementById('listspend');
 
-document.getElementById("img").src = "img/logo.png";
-document.getElementById("name").innerHTML = "Kakaka";
-document.getElementById("date").innerHTML = "No of days left: 2";
-document.getElementById("amount").innerHTML = "8$";
+
+
+
 }
+
+
+
