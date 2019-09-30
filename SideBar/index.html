@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Responsive vertical menu navigation</title>
+		
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" href="index.css">
+
+		<script src="jquery/dist/jquery.min.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/data.js"></script>
+		<script src="canvasjs.min.js"></script>
+		
+		<script src="index.js"></script>
+
+		
+		
+
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				
+				
+			</div>
+			<a href="#" class="nav-trigger">	<img src="img/logo.png"></img></a>
+			<h4><span>Dashboard</span></h4>
+		</div>
+		<div class="side-nav">
+			<div class="logo">
+				<img src="img/logo.png"></img>
+				<span><i class="fa fa-caret-down"></i></span>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">
+							<span><i class="fa fa-user"></i></span>
+							<span>Acounts</span>
+						</a>
+					</li>
+					<li>
+						<a href="#ins" class="active" id="insights">
+
+							<span><i class="fa fa-envelope"></i></span>
+							<span>Insights</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" id="Savings">
+							<span><i class="fa fa-bar-chart"></i></span>
+							<span>Savings</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span><i class="fa fa-credit-card-alt"></i></span>
+							<span>Cards</span>
+						</a>
+					</li>
+				</ul>
+				<br>
+				<ul>
+					<li>
+						<a href="#">
+							<span><i class="fa fa-user"></i></span>
+							<span>Quick Action</span>
+						</a>
+					</li>
+					</ul>
+
+			</nav>
+		</div>
+		<div class="main-content">
+			
+			
+			
+			<div class="main">
+				<div id="ins" class="container">
+						<h1 class="title">Insights</h1>
+				<div class="row">
+					<!--totalspending-->
+				<div id="ts" class ="widget">
+						<div class="title">TotalSpending</div>
+				<div class="card" style="background-color: white">
+					<div class="cardbody">
+						 <div id="totalSpending">
+                                
+                                <div class="cardbody">
+                                    <h1 id="totalSpend"></h1>
+                                    <button id="setbudget" type="button" class="btn btn-dark">Set Budget</button>
+                        </div>
+
+                 
+            </div>
+					</div>
+				</div>
+			</div>
+				
+				<!---->
+				<!--ChartContainer-->
+			
+				<div class="widget">
+					<div class="title">Spending</div>
+					<div class="chart">
+						<div id="chartContainer"></div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			<!--Subscription-->
+			<div class="row row-content">
+				<div class="widget">
+					<div class="card">
+							<div class="card-header" style="background-color:white">
+							  <ul id="topnav" class="nav nav-tabs card-header-tabs" style="padding-left: 250px;">
+								<li class="nav-item">
+								  <a class="nav-link" href="#">Categories</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="#">Merchants</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link active" href="#ListofEpenses">Outgoings</a>
+								</li>
+							   
+							  </ul>
+							</div>
+							<div class="card-body">
+											<p style="margin-right: 80%; font-size:17px"><b>Subscriptions</b></p>
+									<ul id="spenditure" style="margin-top: 0px;">
+									   
+										 
+			
+											<li id="listspend" style="list-style-type: none"> 
+													<div class="row">
+													<img id="img"></img>
+													<p id="name" style="margin-left: 22%"><b></b></p>
+													<p id="date" style="margin-left: 22%"></p>
+													<p id="amount" style="margin-left: 22%"></p>
+													</div>  
+												</li>
+										  
+											   
+									 </ul>
+							</div>
+						  </div>
+						  
+			</div>
+			
+				</div>		
+						</div>
+						<!---->                    
+									
+			</div>
+						
+										
+			
+			
+
+	</body>
+</html>
