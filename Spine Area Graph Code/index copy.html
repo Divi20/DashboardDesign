@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dashboard
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+             <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+             <link rel="stylesheet"  href="index.css">    
+             <script src="https://www.w3schools.com/lib/w3.js"></script>
+    </head>
+    <body>
+           
+           
+            <div  class="container-fluid">
+                    <div class="row row-content">
+                            
+                        <div class="sidebar">
+                                <a href="#" style="margin-left: 100px;"><img src="img/logo.png"></img></a>
+                            <ul class="nav nav-sidebar">
+                                <div class="row">
+                                        <li class="active">
+                                                <a class="nav-link " href="#" style="color: black"><span class="fa fa-home" style="color: black"></span> Accounts</a></li>
+                                        </li>
+                                </div>
+                                <div class="row">
+                                    
+                                    <li class="active">
+                                            <a class="nav-link active" href="#insites" style="color: black"><span class="fa fa-bar-chart" style="color: black"></span> Insights</a></li>
+                                    </li>
+                                        </div>
+                                <div class="row">
+                                        <li class="active">
+                                                <a class="nav-link" href="#" style="color: black"><span class="fa fa-home" style="color: black"></span> Savings</a></li>
+                                        </li>
+                                        </div>
+                                 <div class="row">
+                                        <li class="active">
+                                                <a class="nav-link" href="#" style="color: black"><span class="fa fa-credit-card-alt" style="color: black"></span> Cards</a></li>
+                                        </li>
+                                 </div>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 <div class="row">
+                                        <li class="active">
+                                                <a class="nav-link" href="./index.html" style="color: black"><span class="fa fa-home" style="color: black"></span> Quick action</a></li>
+                                        </li>
+                                 </div>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 main">
+                    
+<!---->
+                    <div id ="insights" class="container">
+                            <h3 class="page-header" style="margin-left: 5%;">Insights</h3>
+                         <div class="row">
+                             <div id="totalSpending" class="col-md-5 col-sm-12">
+                                 <div class="card" style=" height: 370px;
+                                      margin-left: 10%;
+                                     width: 400px;">
+                            <div class="cardheader">
+                                <h6>Total Spend</h6>
+                            </div>
+                                <div class="cardbody">
+                                    <h1 id="totalSpend" style="padding:80px 60px 80px 90px"></h1>
+                                    <button id="setbudget" type="button" class="btn btn-dark">Set Budget</button>
+                        </div>
+
+                </div>    
+            </div>
+        
+        
+                    <div class="col-md-4 col-sm-12">
+                            <div id="chart" class="card">
+                                    <div class="cardbody">
+                                            <div id="chartContainer"></div>
+                    </div>
+
+               
+         </div>
+    
+    
+
+
+</div>
+</div>
+
+<div class="row row-content">
+        <div class="card" style="width: 100%;margin-left: 5%; margin-top:5px;">
+                <div class="card-header" style="background-color:white">
+                  <ul id="topnav" class="nav nav-tabs card-header-tabs" style="padding-left: 250px;">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Merchants</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#ListofEpenses">Outgoings</a>
+                    </li>
+                   
+                  </ul>
+                </div>
+                <div class="card-body">
+                                <p style="margin-right: 80%; font-size:17px"><b>Subscriptions</b></p>
+                        <ul id="spenditure" style="margin-top: 0px;">
+                           
+                             
+
+                                <li id="listspend" style="list-style-type: none"> 
+                                        <div class="row">
+                                        <img id="img"></img>
+                                        <p id="name" style="margin-left: 22%"><b></b></p>
+                                        <p id="date" style="margin-left: 22%"></p>
+                                        <p id="amount" style="margin-left: 22%"></p>
+                                        </div>  
+                                    </li>
+                              
+                                   
+                         </ul>
+                </div>
+              </div>
+              
+</div>
+
+
+<!---->                    
+                </div>
+
+                <div id="accounts" class="container" style="display:none;">
+                        <h2 class="text-center">This is accounts section</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+
+
+             
+        <script src="canvasjs.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
